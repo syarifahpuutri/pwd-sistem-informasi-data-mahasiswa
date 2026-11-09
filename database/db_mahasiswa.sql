@@ -14,7 +14,7 @@ CREATE TABLE mahasiswa (
   created_at  TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (id),
   UNIQUE KEY uk_mahasiswa_nim (nim)
-) ENGINE=InnoDB;
+) ENGmahasiswaINE=InnoDB;
 
 INSERT INTO mahasiswa (nim, nama, prodi, angkatan, email, no_hp) VALUES
 ('H1101251001', 'Andi Pratama',      'Informatika', 2025, 'andi.pratama@student.untan.ac.id',  '081250010001'),
