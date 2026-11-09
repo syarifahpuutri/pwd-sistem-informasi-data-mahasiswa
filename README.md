@@ -1,41 +1,108 @@
-# Proyek CRUD Data Mahasiswa - Kelompok 3 (Kelas A)
-Praktikum Pemrograman Web Dasar - Pertemuan 14. Stack: Vue 3 + Express + MySQL + Tailwind CSS.
+# Sistem Informasi Data Mahasiswa
+**Kelompok 3 – Kelas A**
 
-## Struktur
-```
-database/   db_mahasiswa.sql   (CREATE DATABASE, tabel, seed 6 baris)
-backend/    Express API (config, models, controllers, routes, server.js)
-frontend/   Vue 3 + Vue Router + Axios + Tailwind (Vite)
-docs/       ISIAN_LKK.md       (bahan untuk mengisi LKK)
+Proyek ini merupakan aplikasi CRUD Data Mahasiswa yang dibuat untuk memenuhi tugas Praktikum Pemrograman Web Dasar Pertemuan 14.
+
+## 1. Teknologi yang Digunakan
+
+- **Frontend:** Vue 3, Vue Router, Vite, dan Tailwind CSS.
+- **Backend:** Node.js dan Express.js.
+- **Database:** MySQL.
+- **HTTP Client:** Axios.
+
+## 2. Struktur Folder
+
+```text
+project/
+├── database/
+│   └── db_mahasiswa.sql
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+├── frontend/
+│   ├── src/
+│   ├── index.html
+│   └── vite.config.js
+├── docs/
+│   └── ISIAN_LKK.md
+└── README.md
 ```
 
-## Cara menjalankan
-### 1. Database
-Nyalakan MySQL (XAMPP/Laragon), lalu import `database/db_mahasiswa.sql` lewat phpMyAdmin
-atau: `mysql -u root < database/db_mahasiswa.sql`
+## 3. Persiapan
 
-### 2. Backend (port 3000)
-```
+Pastikan perangkat sudah memiliki:
+- Node.js dan npm.
+- MySQL melalui XAMPP atau Laragon.
+- Browser.
+- Visual Studio Code.
+
+## 4. Cara Menjalankan Aplikasi
+
+### A. Database
+
+1. Jalankan MySQL melalui Laragon atau XAMPP.
+2. Buka phpMyAdmin.
+3. Import file `database/db_mahasiswa.sql`.
+4. Pastikan database dan tabel berhasil dibuat.
+
+### B. Backend
+
+Buka terminal pada folder backend:
+
+```bash
 cd backend
 npm install
-npm start
+node server.js
 ```
-Sesuaikan `backend/.env` (DB_USER, DB_PASSWORD) dengan MySQL di komputer kamu.
-Server harus menampilkan "Koneksi MySQL berhasil".
 
-### 3. Frontend (port 5173)
-```
+Backend berjalan pada:
+
+`http://localhost:3000`
+
+Sesuaikan konfigurasi koneksi MySQL pada file `backend/.env`.
+
+### C. Frontend
+
+Buka terminal baru pada folder frontend:
+
+```bash
 cd frontend
 npm install
 npm run dev
 ```
-Buka http://localhost:5173
 
-## Endpoint
-| Method | URL                      |
-|--------|--------------------------|
-| GET    | /api/mahasiswa           |
-| GET    | /api/mahasiswa/:id       |
-| POST   | /api/mahasiswa           |
-| PUT    | /api/mahasiswa/:id       |
-| DELETE | /api/mahasiswa/:id       |
+Buka alamat yang ditampilkan oleh Vite, biasanya:
+
+`http://localhost:5173`
+
+## 5. Endpoint API
+
+| Method | Endpoint | Keterangan |
+|---|---|---|
+| GET | `/api/mahasiswa` | Menampilkan seluruh data |
+| GET | `/api/mahasiswa/:id` | Menampilkan data berdasarkan ID |
+| POST | `/api/mahasiswa` | Menambahkan data |
+| PUT | `/api/mahasiswa/:id` | Mengubah data |
+| DELETE | `/api/mahasiswa/:id` | Menghapus data |
+
+## 6. Fitur Utama
+
+Aplikasi ini dirancang untuk melakukan pengelolaan data mahasiswa melalui operasi CRUD:
+
+- **Create:** Menambahkan data mahasiswa.
+- **Read:** Menampilkan data mahasiswa.
+- **Update:** Mengubah data mahasiswa.
+- **Delete:** Menghapus data mahasiswa.
+
+## 7. Anggota Kelompok
+Anggota:
+Neisya Fadilla Nurkhairunnisa H1101251007
+Gendis Setyawan Putri H1101251011
+Syarifah Putri H1101251013
+Shinta Ayuwidati H1101251019
+Desty Ayudya H1101251023
+Novi Aulia H1101251043
+
