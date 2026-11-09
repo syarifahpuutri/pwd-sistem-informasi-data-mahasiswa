@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-slate-50 text-slate-800 antialiased; }
+}
+
+@layer components {
+  .input { @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-untan-600 focus:outline-none focus:ring-2 focus:ring-untan-100; }
+  .btn { @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2; }
+  .btn-primary { @apply btn bg-untan-600 text-white hover:bg-untan-700 focus-visible:ring-untan-600; }
+  .btn-ghost { @apply btn border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 focus-visible:ring-slate-400; }
+  .btn-danger { @apply btn bg-red-600 text-white hover:bg-red-700 focus-visible:ring-red-600; }
+}
