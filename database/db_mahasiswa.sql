@@ -32,14 +32,14 @@ CREATE TABLE mahasiswa (
 INSERT INTO mahasiswa
 (nim, nama, prodi, angkatan, email, ipk)
 VALUES
-('H1101251001', 'Andi Pratama', 'Informatika', 2025, 'andi.pratama@student.untan.ac.id', 3.75),
+('H1101251001', 'Shinta Ayuwidati', 'Manajemen Informasi', 2025, 'andi.pratama@student.untan.ac.id', 3.75),
 
-('H1101251002', 'Siti Aisyah', 'Informatika', 2025, 'siti.aisyah@student.untan.ac.id', 3.80),
+('H1101251002', 'Gendis Setyawan Putri', 'Informatika', 2025, 'siti.aisyah@student.untan.ac.id', 3.80),
 
-('H1101241003', 'Budi Santoso', 'Informatika', 2024, 'budi.santoso@student.untan.ac.id', 3.65),
+('H1101241003', 'Neisya Fadila', 'Informatika', 2024, 'budi.santoso@student.untan.ac.id', 3.65),
 
-('H1101241004', 'Dewi Lestari', 'Informatika', 2024, 'dewi.lestari@student.untan.ac.id', 3.90),
+('H1101241004', 'Desty Ayuwidati', 'Sistem Informasi', 2024, 'dewi.lestari@student.untan.ac.id', 3.90),
 
-('H1101231005', 'Rizky Maulana', 'Informatika', 2023, 'rizky.maulana@student.untan.ac.id', 3.55),
+('H1101231005', 'Rizky Maulana', 'Arsitektur', 2023, 'rizky.maulana@student.untan.ac.id', 3.55),
 
 ('H1101231006', 'Putri Ramadhani', 'Informatika', 2023, 'putri.ramadhani@student.untan.ac.id', 3.85);
